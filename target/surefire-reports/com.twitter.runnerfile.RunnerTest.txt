@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.twitter.runnerfile.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.031 s <<< FAILURE! - in com.twitter.runnerfile.RunnerTest
+runScenario(com.twitter.runnerfile.RunnerTest)  Time elapsed: 38.406 s  <<< FAILURE!
+java.lang.AssertionError: Just checking the negative flow
+

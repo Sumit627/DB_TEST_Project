@@ -1,0 +1,185 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-18T18:33:31.063Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13103000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.Setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Twitter Profile page update",
+        "description": "",
+        "id": "twitter-profile-section-update;twitter-profile-page-update",
+        "after": [
+          {
+            "result": {
+              "duration": 5315000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16353000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged to Twitter",
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.user_is_logged_to_twitter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Just checking the negative flow\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat com.twitter.stepdefs.TwitterStepDefinition.user_is_navigated_to_edit_profile_page(TwitterStepDefinition.java:136)\r\n\tat ✽.User is navigated to Edit Profile page(file:///C:/Users/Sumit/Desktop/GITREPO/DB_TEST_Project/src/test/resources/TwitterProfileSectionUpdate.feature:5)\r\n",
+              "duration": 2789000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User is navigated to Edit Profile page",
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.user_is_navigated_to_edit_profile_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Upload Profile Picture",
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.uploadProfilePicture()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Update the BIO field as \"Selenium Automation user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium Automation user\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.update_the_bio_field_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Update the Location field as \"Delhi, India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delhi, India\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.update_the_location_field_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Update Website field as \"twitter.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"twitter.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.update_website_field_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Save the Profile page",
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.save_the_profile_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Revisit the profile page and revalidate the submitted value \"Selenium Automation user\" \"Delhi, India\" \"twitter.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium Automation user\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Delhi, India\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"twitter.com\"",
+                  "offset": 102
+                }
+              ],
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.revisit_the_profile_page_and_revalidate_the_submitted_value(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Logout",
+            "match": {
+              "location": "com.twitter.stepdefs.TwitterStepDefinition.logout()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Twitter Profile Section Update",
+    "description": "",
+    "id": "twitter-profile-section-update",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/TwitterProfileSectionUpdate.feature",
+    "tags": []
+  }
+]
