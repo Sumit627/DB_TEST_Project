@@ -37,8 +37,8 @@ public class TwitterStepDefinition {
     private ProfilePage profilePageObj;
 
     @Before
-    public void Setup() {
-
+    public void Setup(Scenario scenario) {
+        System.out.println("-------------------Start of execution of Test Scenario : "+scenario.getName()+" ----------------------");
         String browserName = prop.getProperty("DefaultBrowser");
         if(browserName.equalsIgnoreCase("CHROME")){
             WebDriverManager.getInstance(DriverManagerType.CHROME).clearDriverCache().setup();
@@ -57,6 +57,7 @@ public class TwitterStepDefinition {
 
     @After
     public void teardown(Scenario scenario) throws IOException {
+        System.out.println("--------------------End of execution of Test Scenario : "+scenario.getName()+" --------------------------");
         if(scenario.isFailed()){
             File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             String currentDir = System.getProperty("user.dir");
